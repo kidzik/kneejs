@@ -20,11 +20,10 @@ import * as tf from '@tensorflow/tfjs';
 import {IMAGENET_CLASSES} from './imagenet_classes';
 
 const MOBILENET_MODEL_PATH =
-      // tslint:disable-next-line:max-line-length
-      //    'https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_0.25_224/model.json';
-      //    'http://localhost:4000/public/models/KneeNet/model.json';
+      //    'http://localhost:4000/public/models/KneeNet/model.json'; // TODO: change for KneeNet
       'http://localhost:4000/public/models/chexnet/model.json';
 
+// TODO: Change for KneeNet to 299
 const IMAGE_SIZE = 224;
 const TOPK_PREDICTIONS = 10;
 
